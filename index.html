@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 100%;
+            display: flex;
+        }
+        #container{
+            display:  grid;
+            grid-template-columns: repeat(4 ,23.5%);
+            grid-gap: 2%;
+            
+        }
+        #sidebar{
+            width: 7%;
+          
+
+        }
+       i{
+           font-size: 30px;
+           overflow: hidden;
+       }
+       #navbar{
+           display: flex;
+           height: 70px;
+           
+           align-items: center;
+       }
+       #main2{
+           background-color: rgb(240, 240, 240);
+       }
+       p{
+           margin: 0px;
+       }
+       #inputdata{
+           height: 60%;
+           width: 500px;
+           margin-left: 100px;
+       }
+    </style>
+<script src="https://kit.fontawesome.com/fa6b950247.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="navbar">
+        <img style="height: 120%; margin-left: 60px;" src="https://www.logo.wine/a/logo/YouTube/YouTube-Logo.wine.svg" alt="">
+        <input id="inputdata" type="text" placeholder="Search video">
+        <button style="width: 70px; height: 70%; border: 1px solid black;"  onclick="searchbtn()"><i class="fa-solid fa-magnifying-glass" style="font-size: 30px;" ></i></button>
+    </div>
+<div id="main">
+    <div id="sidebar">
+        <i class="fa-solid fa-house" ></i>
+        <p>Home</p>
+        <br>
+        <i class="fa-regular fa-compass"></i>
+        <p>Explore</p>
+        <br>
+        <i class="fa-solid fa-arrow-down-a-z"></i>
+        <p>Shorts</p>
+        <br>
+        <i class="fa-regular fa-circle-play"></i>
+        <p>subscr...</p>
+        <br>
+        <i class="fa-solid fa-book"></i>
+        <p>Libray</p>
+    </div>
+    <div id="main2">
+            <div id="container"></div>
+    </div>
+    
+   
+
+   
+</div>
+</body>
+</html>
+<script src="index.js">
+    
+</script>
